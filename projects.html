@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- PROJECTS · Arkadeep Das. See index.html header for edit notes. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Arkadeep Das</title>
+  <meta name="description" content="Selected projects and industry experience of Arkadeep Das." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal,.reveal-group>*{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Arkadeep Das</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="navlinks" id="menu" aria-label="Primary">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="research.html">research</a>
+        <a href="publications.html">publications</a>
+        <a href="projects.html" aria-current="page">projects</a>
+        <a class="btn btn--primary" href="Arkadeep_Das_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pagehero">
+    <div class="wrap">
+      <span class="eyebrow reveal">Projects</span>
+      <h1 class="reveal">Systems I've built</h1>
+      <p class="lead reveal">Production software from my time at Samsung R&amp;D — several with real access-control and software-security requirements — plus the industry experience behind it.</p>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ===== SELECTED PROJECTS ===== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2 class="h2">Selected projects</h2>
+        </div>
+
+        <div class="grid-3 reveal-group">
+          <article class="card">
+            <span class="card__tag">security</span>
+            <h3>Votex</h3>
+            <p class="card__meta">Secure multi-group voting platform · Samsung R&amp;D · 2025</p>
+            <p>An internal voting system with group-wise score tracking and automated result aggregation, protected by <strong>MAC-based access control</strong> so it runs only from authorised devices in a controlled environment. Added bell-curve score adjustment to reduce bias.</p>
+            <div class="keys"><span class="key">MAC filtering</span><span class="key">access control</span><span class="key">PHP · MySQL</span></div>
+          </article>
+
+          <article class="card">
+            <span class="card__tag">rbac</span>
+            <h3>ProjectMetric</h3>
+            <p class="card__meta">Corporate performance evaluator · Samsung R&amp;D · 2025</p>
+            <p>A multi-level admin system for project scoring and evaluation with role-based input management, built on dynamic workflows that route the right inputs to the right roles and automate the evaluation logic.</p>
+            <div class="keys"><span class="key">role-based access</span><span class="key">workflow design</span><span class="key">Laravel</span></div>
+          </article>
+
+          <article class="card">
+            <span class="card__tag">platform</span>
+            <h3>CoreSync</h3>
+            <p class="card__meta">Enterprise operations system · Samsung R&amp;D · 2024–25</p>
+            <p>A centralised operations platform automating attendance, leave, weekly reporting, an award dashboard, project tracking, and DOI management. Resolved 30+ backend, frontend, and logic issues and tuned the database for performance.</p>
+            <div class="keys"><span class="key">PHP · MySQL</span><span class="key">JavaScript</span><span class="key">query optimisation</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INDUSTRY EXPERIENCE ===== -->
+    <section class="section section--line">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">Experience</span>
+          <h2 class="h2">Industry experience</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="tl-item">
+            <div class="tl-date">Nov 2024 — Sep 2025</div>
+            <div class="tl-role">System Developer Intern</div>
+            <div class="tl-org">Samsung R&amp;D Institute Bangladesh (SRBD) · Dhaka</div>
+            <ul class="tl-bullets">
+              <li>Built enterprise web systems with Laravel, CodeIgniter, PHP, MySQL, JavaScript, and Bootstrap.</li>
+              <li>Shipped attendance, leave, and reporting automation modules that cut manual workload.</li>
+              <li>Designed database-driven workflows across multiple projects and fixed numerous logic and database bugs.</li>
+              <li>Implemented device access restriction for an internal voting system — first hands-on exposure to endpoint-based access control.</li>
+            </ul>
+            <div class="tl-keys"><span class="key">Laravel</span><span class="key">CodeIgniter</span><span class="key">MySQL</span><span class="key">access control</span></div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-date">Mar 2024 — Nov 2024</div>
+            <div class="tl-role">IP Transmission Network Intern</div>
+            <div class="tl-org">Fiber@Home Ltd. · Dhaka</div>
+            <ul class="tl-bullets">
+              <li>Worked with routing, switching, network troubleshooting, and traffic analysis in a live production network.</li>
+              <li>Gained hands-on experience with Cisco routers and switches and network monitoring tools.</li>
+              <li>Helped diagnose connectivity, configuration, and performance issues — building the network-infrastructure grounding behind my interest in network security.</li>
+            </ul>
+            <div class="tl-keys"><span class="key">Cisco</span><span class="key">routing / switching</span><span class="key">traffic analysis</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section section--line">
+      <div class="wrap">
+        <div class="ctastrip reveal">
+          <h2>Let's talk.</h2>
+          <p>If this background fits what your group is working on, I'd love to hear from you.</p>
+          <div class="row">
+            <a class="btn btn--primary" href="about.html">Contact details</a>
+            <a class="btn" href="Arkadeep_Das_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© 2026 Arkadeep Das</span>
+      <span class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="Arkadeep_Das_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="#top">Top ↑</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

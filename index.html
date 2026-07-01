@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  ARKADEEP DAS — personal site  ·  HOME
+  ----------------------------------------------------------------------------
+  Multi-page static site. Files (keep them together in one folder):
+     index.html · about.html · research.html · publications.html · projects.html
+     styles.css · main.js · Arkadeep_Das_CV.pdf · portrait.jpg (add your photo)
+
+  YOUR PHOTO:  save a photo named  portrait.jpg  in this same folder.
+               It appears in the ID badge here and on the About page.
+               Until then, an "AD" placeholder shows.
+
+  THINGS TO FILL IN (search for these):
+     href="#"            -> real LinkedIn / GitHub / Google Scholar URLs
+     your.email          -> your real email address
+     Framing note: the CV you gave me is a PhD *application* CV, so titles read
+     "Cybersecurity Researcher · PhD Applicant" (accurate for admissions eyes).
+     Change that wording here + in the badge if you prefer something else.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arkadeep Das — Cybersecurity Researcher</title>
+  <meta name="description" content="Arkadeep Das — cybersecurity researcher and PhD applicant. Software & network security, cloud security, and the security of LLM-based systems." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal,.reveal-group>*{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== NAV (identical on every page; update links in all files) ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Arkadeep Das</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="navlinks" id="menu" aria-label="Primary">
+        <a href="index.html" aria-current="page">home</a>
+        <a href="about.html">about</a>
+        <a href="research.html">research</a>
+        <a href="publications.html">publications</a>
+        <a href="projects.html">projects</a>
+        <a class="btn btn--primary" href="Arkadeep_Das_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__intro">
+          <span class="eyebrow reveal">Cybersecurity Researcher</span>
+          <h1 class="hero__name reveal">Arkadeep<br>Das</h1>
+          <p class="hero__thesis reveal">Working toward a PhD in cybersecurity — securing <em>software, networks, and the systems built on large language models</em>.</p>
+          <p class="hero__sub reveal">A software engineer and published ML researcher moving into security research, backed by hands-on network engineering and a cryptography foundation.</p>
+
+          <div class="hero__meta reveal">
+            <span class="metatag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4v5c0 4.5-3.2 7.7-8 9-4.8-1.3-8-4.5-8-9V7l8-4z"/></svg>
+              Research Assistant, Elite Research Lab
+            </span>
+            <span class="metatag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-5.2 7-11a7 7 0 10-14 0c0 5.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+              Dhaka, Bangladesh
+            </span>
+            <span class="metatag">PhD Applicant · 2026</span>
+          </div>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="research.html">Explore my research</a>
+            <a class="btn" href="Arkadeep_Das_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+
+        <!-- SIGNATURE: ID badge with photo -->
+        <aside class="idcard reveal" aria-label="Identity card">
+          <div class="idcard__bar">
+            <span>Identity</span>
+            <span class="idcard__status"><span class="dot" aria-hidden="true"></span>active</span>
+          </div>
+          <div class="idcard__body">
+            <div class="idcard__id">
+              <div class="idcard__avatar">
+                <span class="ph" aria-hidden="true">AD</span>
+                <!-- Add portrait.jpg to this folder; it fills this avatar automatically -->
+                <img src="portrait.jpg" alt="Arkadeep Das" onerror="this.style.display='none'" />
+              </div>
+              <div>
+                <div class="idcard__name">Arkadeep Das</div>
+                <div class="idcard__role">Cybersecurity Researcher<br>PhD Applicant · 2026</div>
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="k">Signature</span>
+              <span class="v fingerprint" data-decode>A3D2 7C41 9F0E 5B6A 1180 CCE2 74AB 6D93</span>
+            </div>
+
+            <div class="field">
+              <span class="k">Focus</span>
+              <div class="idcard__focus">
+                <span>Software &amp; Network Security</span>
+                <span>Cloud Security</span>
+                <span>Security of LLM-based Systems</span>
+              </div>
+            </div>
+
+            <div class="idcard__foot">
+              <span>research&nbsp;asst&nbsp;·&nbsp;2026 —</span>
+              <span>BSc CS · BRAC '23</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section class="section section--line">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">At a glance</span>
+          <h2 class="h2">Where I'm coming from</h2>
+        </div>
+        <div class="highlights reveal-group">
+          <a class="hl" href="publications.html">
+            <b>2</b>
+            <span>peer-reviewed IEEE publications</span>
+            <span class="go">See publications →</span>
+          </a>
+          <a class="hl" href="projects.html">
+            <b>3+</b>
+            <span>systems built with security controls at Samsung R&amp;D</span>
+            <span class="go">See projects →</span>
+          </a>
+          <a class="hl" href="about.html">
+            <b>2</b>
+            <span>industry internships — enterprise dev + IP networking</span>
+            <span class="go">More about me →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED RESEARCH ===== -->
+    <section class="section section--line">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">Research direction</span>
+          <h2 class="h2">What I want to work on</h2>
+          <p class="lead">Three areas where my background in machine learning, software engineering, and networking meet a growing security problem.</p>
+        </div>
+
+        <div class="grid-3 reveal-group">
+          <article class="card">
+            <span class="card__tag">systems</span>
+            <h3>Software &amp; Network Security</h3>
+            <p>Finding and closing the gaps between what software and network infrastructure promise and what they actually do under a motivated attacker.</p>
+            <div class="keys"><span class="key">vulnerability analysis</span><span class="key">packet analysis</span></div>
+          </article>
+
+          <article class="card">
+            <span class="card__tag">cloud</span>
+            <h3>Cloud Security</h3>
+            <p>Securing multi-tenant, service-driven deployments — access control, isolation, and the trust boundaries that quietly hold them together.</p>
+            <div class="keys"><span class="key">access control</span><span class="key">isolation</span></div>
+          </article>
+
+          <article class="card">
+            <span class="card__tag">ml + security</span>
+            <h3>Security of LLM-based Systems</h3>
+            <p>Where my ML research meets security: understanding how systems built on large language models fail, leak, and can be manipulated.</p>
+            <div class="keys"><span class="key">model behaviour</span><span class="key">robustness</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section section--line">
+      <div class="wrap">
+        <div class="ctastrip reveal">
+          <h2>Open to PhD positions for 2026.</h2>
+          <p>I'm looking for a group where I can turn a strong engineering and ML foundation into rigorous security research. Happy to talk.</p>
+          <div class="row">
+            <a class="btn btn--primary" href="about.html">Get in touch</a>
+            <a class="btn" href="publications.html">Read my work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (identical on every page) ===== -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© 2026 Arkadeep Das</span>
+      <span class="footer__links">
+        <a href="about.html">About</a>
+        <a href="Arkadeep_Das_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="#top">Top ↑</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
